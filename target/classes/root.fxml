@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="230.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.sda.Controller.RootController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField fx:id="city" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="220.0" promptText="Input city">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Button fx:id="search" layoutX="240.0" layoutY="10.0" mnemonicParsing="false" onAction="#setCity" prefHeight="35.0" prefWidth="150.0" text="Search" textFill="#683434">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font></Button>
+            <Label layoutX="15.0" layoutY="55.0" prefHeight="25.0" prefWidth="80.0" text="Temperature" textAlignment="RIGHT" />
+            <Label layoutX="15.0" layoutY="85.0" prefHeight="25.0" prefWidth="80.0" text="Feels like" textAlignment="RIGHT" />
+            <Label layoutX="15.0" layoutY="115.0" prefHeight="25.0" prefWidth="80.0" text="Wind" textAlignment="RIGHT" />
+            <Label layoutX="15.0" layoutY="145.0" prefHeight="25.0" prefWidth="80.0" text="Wind direction" textAlignment="RIGHT" />
+            <Label layoutX="15.0" layoutY="175.0" prefHeight="25.0" prefWidth="80.0" text="Humidity" textAlignment="RIGHT" />
+            <Line endX="135.0" layoutX="90.0" layoutY="80.0" startX="-75.0" stroke="#e1cfcf" />
+            <Line endX="135.0" layoutX="90.0" layoutY="110.0" startX="-75.0" stroke="#e1cfcf" />
+            <Line endX="135.0" layoutX="90.0" layoutY="140.0" startX="-75.0" stroke="#e1cfcf" />
+            <Line endX="135.0" layoutX="90.0" layoutY="170.0" startX="-75.0" stroke="#e1cfcf" />
+            <Line endX="135.0" layoutX="90.0" layoutY="200.0" startX="-75.0" stroke="#e1cfcf" />
+            <Label fx:id="temp_c" layoutX="120.0" layoutY="59.0" text="...................." />
+            <Label layoutX="186.0" layoutY="59.0" text="[°C]" />
+            <Label fx:id="feelslike_c" layoutX="120.0" layoutY="89.0" text="...................." />
+            <Label layoutX="186.0" layoutY="89.0" text="[°C]" />
+            <Label fx:id="wind_kph" layoutX="120.0" layoutY="119.0" text="...................." />
+            <Label layoutX="186.0" layoutY="119.0" text="[km/h]" />
+            <Label fx:id="wind_dir" layoutX="120.0" layoutY="149.0" text="...................." />
+            <Label fx:id="humidity" layoutX="120.0" layoutY="179.0" text="...................." />
+            <Label layoutX="186.0" layoutY="179.0" text="[%]" />
+            <Label fx:id="condition_text" alignment="CENTER" layoutX="266.0" layoutY="179.0" prefHeight="17.0" prefWidth="98.0" textAlignment="CENTER" />
+            <ImageView fx:id="imageView" fitHeight="140.0" fitWidth="140.0" layoutX="245.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
